@@ -61,7 +61,7 @@ This project uses uv as a package manager.
    ```bash
    uv run jupyter notebook
    ```
-3. Run the code in the notebook. 
+3. Run the code in the notebook (the analysis is also visible simply by opening the notebook on Github directly as graphs are displayed inline). 
 
 ## 3. Analysis Commentary
 
