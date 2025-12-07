@@ -63,7 +63,7 @@ This project uses uv as a package manager.
    ```
 3. Run the code in the notebook (the analysis is also visible simply by opening the notebook on Github directly as graphs are displayed inline). 
 
-## 3. Analysis Commentary
+## 3. Analysis / Commentary
 
 The graph in the notebook highlights the sticky nature of historical vol, where the 720d lookback window forces the risk model to "remember" the 2022 depegging event long after the market stabilized. 
 This creates a visible lag between market recovery and model recovery, resulting in a step-function drop in risk around mid-2024 only once those volatile data points are finally out of the rolling window (similar to what we call vol roll off or ghost effect in options trading, when a volatile point finally ages out of the realized volatility calculation - generally a 30d rolling window). As a consequence, capital efficiency was artificially suppressed for nearly two years, as the model demanded high collateral haircuts despite the stETH/ETH ratio returning to parity much earlier. Currently, the model reflects a more stable regime with minimal implied risk, suggesting LPs and MMs can now operate with significantly tighter spreads and lower capital buffers.
